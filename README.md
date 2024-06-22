@@ -12,7 +12,7 @@ put these files into .config/waybar on your linux machine and enjoy!
 
 
 <h2>Modules</h2>
-For almost all of the modules listed in modules file you can find a tutorial on <b>[wiki](https://github.com/Alexays/Waybar/wiki)</b> As for customones, they are listed below.
+For almost all of the modules listed in modules file you can find a tutorial on https://github.com/Alexays/Waybar/wiki. As for custom ones, they are listed below.
 
 1. custom/update
 This modules goal is to track updates on your **Fedora Workstation** system that uses dnf package manager
@@ -54,6 +54,6 @@ echo "$json_obj"
 And it looks like this:
 ![Screenshot 2](.github/source/showcase2.png)
 
-It shows 50 first packages in aplphabetic order in it's tooltip.
-Full amount of updates is showed on the module itself.
+It shows 50 first packages in aplphabetic order in it's tooltip.<br>
+Full amount of updates is showed on the module itself.<br>
 On-click updates the system.
