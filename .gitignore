@@ -1,6 +1,7 @@
 style/*
 configs/*
 wallust/*
+.idea
 !"configs/[TOP] Custom.css"
 !style/custom.css
 config
