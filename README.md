@@ -7,7 +7,8 @@ But if you want to try these dots yourself,
 put these files into .config/waybar on your linux machine and enjoy!
 
 <h2>Showcase</h2>
-![Screenshot 1](.github/source/showcase1.png)
+
+![Screenshot 2](.github/source/showcase1.png)
 
 
 <h2>Modules</h2>
@@ -51,7 +52,7 @@ echo "$json_obj"
 
 ```
 And it looks like this:
-![Screenshot 1](.github/source/showcase2.png)
+![Screenshot 2](.github/source/showcase2.png)
 
 It shows 50 first packages in aplphabetic order in it's tooltip.
 Full amount of updates is showed on the module itself.
