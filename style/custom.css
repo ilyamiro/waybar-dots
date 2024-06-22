@@ -1,0 +1,314 @@
+@import url("colors/catppuccin-mocha.css");
+
+#waybar {
+    background-color: @crust;
+    color: @text;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    border-radius: 5px; 
+    margin: 0px;
+    padding: 0px;
+    /*border-bottom: 1px solid @surface0; */
+}
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* Space first and last modules evenly */
+.modules-right:last-child { margin-right: 12px; }
+.modules-left:first-child { margin-left: 12px;}
+
+/* Make all the NF icons bigger */
+#battery,
+#sys-info,
+#pulseaudio,
+#backlight,
+#custom-power
+{
+    font-size: 14px;
+}
+
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 8px;
+  margin-left: 6px;
+  margin-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #FC4100;
+}
+
+
+/* Styling workspace */
+#workspaces,
+#workspaces button{
+    /* border: 1px solid red; */
+    all: unset;
+}
+#workspaces {
+    /*background-color: @mantle; */
+    margin: 0px 6px;
+    border-radius: 4px;
+}
+
+#workspaces > button { 
+    padding: 0px 15px 0px 10px; 
+    font-weight: 900;
+    border-radius: 0px;
+    color: #4B70F5;
+}
+#workspaces > button.empty {
+    color: @overlay0;
+    /* border: 1px solid red; */
+}
+#workspaces > button.visible {
+    color: @overlay0;
+    /* border: 1px solid red; */
+}
+#workspaces > button.active {
+    color: #4C3BCF;
+    background: alpha(#4C3BCF, 0.1);
+    border-bottom: 1px solid @overlay0; 
+}
+#workspaces > button:hover { 
+    background: alpha(#4C3BCF, 0.01);
+    color: #4C3BCF;
+}
+#workspaces > button:first-child {
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 14px;
+}
+#workspaces > button:last-child {
+    border-radius: 0px 8px 8px 0px;
+    padding-right: 20px;
+}
+
+
+
+/* Styling tooltips */
+tooltip {
+    padding: 15px;
+    background-color: @base;
+    color: @overlay0;
+    font-family: Space Mono Nerd Font;
+    font-size: 12px;
+}
+
+tooltip label {
+    padding: 10px;
+    color: @foreground;
+}
+
+label:focus {
+    background-color: @background;
+}
+
+.sys-info{ 
+	font-size: 11px;
+}
+
+#temperature, 
+#memory,
+#cpu, 
+#disk{
+  padding: 8px;
+  margin-left: 4px;
+}
+
+#pulseaudio,
+#pulseaudio.microphone{
+  padding: 5px;
+}
+
+#custom-separator.line{
+  color: @blue;
+}
+
+#custom-separator.dot{
+  color: @blue;
+  margin-right: 10px;
+  margin-left: 6px;
+}
+
+#pulseaudio {
+	margin-top: 8px;
+  margin-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	color: #161320;
+	background-color: #78ABA8;
+}
+
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+
+#tray {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 6px;
+	padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  transition: none; 
+  border-radius: 4px;
+  background: #363a4f;
+}
+
+#clock {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 6px;
+	padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  transition: none; 
+  border-radius: 4px;
+  color: black;
+  background: #C8CFA0;
+}
+
+#custom-swaync{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 6px;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  color: black;
+  background: #78ABA8;
+}
+
+#backlight {
+	margin-top: 8px;
+  margin-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #FCDC94;
+}
+
+#custom-update{
+  margin-top: 8px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	padding-right: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: white;
+	background: #363a4f;
+}
+
+#memory {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	padding-right: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #babbf1;
+}
+#cpu {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	padding-right: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #babbf1;
+}
+#custom-keyboard {
+	margin-top: 8px;
+	margin-bottom: 8px;
+  margin-right: 6px;
+	padding-right: 10px;
+  padding-left: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #EF9C66;
+}
+#disk {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	padding-right: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #babbf1;
+}
+#temperature {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 8px;
+	padding-right: 10px;
+	border-radius: 4px;
+	transition: none;
+	color: #161320;
+	background: #fe640b;
+}
+
+#battery {
+	margin-top: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	transition: none;
+  font-size: 14.5px;
+	color: #161320;
+	background: #C8CFA0;
+}
+
+#power-profiles-daemon{
+	margin-top: 8px;
+	padding-left: 10px;
+	padding-right: 13px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	color: #161320;
+	background: #babbf1;
+}
+
+#battery.charging, #battery.plugged {
+	color: #161320;
+  background-color: #C8CFA0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    color: #161320;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
