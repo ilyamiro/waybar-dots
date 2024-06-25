@@ -1,12 +1,13 @@
 @import url("colors/catppuccin-mocha.css");
 
 #waybar {
-    background-color: @crust;
+    background-color: transparent;
     color: @text;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
     border-radius: 5px; 
     margin: 0px;
+    margin-top: 0px;
     padding: 0px;
     /*border-bottom: 1px solid @surface0; */
 }
@@ -56,7 +57,10 @@ window#waybar {
 #workspaces {
     /*background-color: @mantle; */
     margin: 0px 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     border-radius: 4px;
+    background-color: @crust;
 }
 
 #workspaces > button { 
