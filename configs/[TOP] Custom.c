@@ -13,6 +13,7 @@
 
 
 "modules-left": [	
+  "battery",
   "clock",
   "custom/swaync",
   "custom/update",
@@ -29,7 +30,6 @@
   "backlight",
   "group/audio",
   "custom/keyboard",
-  "battery",
   "custom/power"
   ],
 }

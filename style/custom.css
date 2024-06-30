@@ -1,5 +1,13 @@
 @import url("colors/catppuccin-mocha.css");
 
+
+@define-color first #5A639C;
+@define-color second #7776B3;
+@define-color third #9B86BD;
+@define-color forth #E2BBE9;
+
+
+
 #waybar {
     background-color: transparent;
     color: @text;
@@ -11,6 +19,7 @@
     padding: 0px;
     /*border-bottom: 1px solid @surface0; */
 }
+
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -44,7 +53,7 @@ window#waybar {
 	border-radius: 4px;
 	transition: none;
 	color: #161320;
-	background: #FC4100;
+	background: @first;
 }
 
 
@@ -60,14 +69,14 @@ window#waybar {
     margin-top: 8px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: @crust;
+    background-color: #363a4f;
 }
 
 #workspaces > button { 
     padding: 0px 15px 0px 10px; 
     font-weight: 900;
     border-radius: 0px;
-    color: #4B70F5;
+    color: @third;
 }
 #workspaces > button.empty {
     color: @overlay0;
@@ -78,8 +87,8 @@ window#waybar {
     /* border: 1px solid red; */
 }
 #workspaces > button.active {
-    color: #4C3BCF;
-    background: alpha(#4C3BCF, 0.1);
+    color: @forth;
+    background: alpha(@forth, 0.1);
     border-bottom: 1px solid @overlay0; 
 }
 #workspaces > button:hover { 
@@ -127,10 +136,6 @@ label:focus {
   margin-left: 4px;
 }
 
-#pulseaudio,
-#pulseaudio.microphone{
-  padding: 5px;
-}
 
 #custom-separator.line{
   color: @blue;
@@ -149,8 +154,8 @@ label:focus {
 	padding-right: 10px;
 	margin-bottom: 8px;
 	border-radius: 4px;
-	color: #161320;
-	background-color: #78ABA8;
+	color: white;
+	background-color: @third;
 }
 
 
@@ -183,8 +188,8 @@ label:focus {
   border-radius: 4px;
   transition: none; 
   border-radius: 4px;
-  color: black;
-  background: #C8CFA0;
+  color: white;
+  background:  @third;
 }
 
 #custom-swaync{
@@ -195,8 +200,8 @@ label:focus {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 4px;
-  color: black;
-  background: #78ABA8;
+  color: white;
+  background: @second;
 }
 
 #backlight {
@@ -207,8 +212,8 @@ label:focus {
 	margin-bottom: 8px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #FCDC94;
+	color: white;
+	background: @forth;
 }
 
 #custom-update{
@@ -219,7 +224,7 @@ label:focus {
 	border-radius: 4px;
 	transition: none;
 	color: white;
-	background: #363a4f;
+	background: @first;
 }
 
 #memory {
@@ -230,8 +235,8 @@ label:focus {
 	padding-right: 10px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #babbf1;
+	color: white;
+	background:  #363a4f;
 }
 #cpu {
 	margin-top: 8px;
@@ -241,19 +246,18 @@ label:focus {
 	padding-right: 10px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #babbf1;
+	color: white;
+	background:  #363a4f;
 }
 #custom-keyboard {
 	margin-top: 8px;
 	margin-bottom: 8px;
-  margin-right: 6px;
 	padding-right: 10px;
   padding-left: 10px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #EF9C66;
+	color: white;
+	background:  @second;
 }
 #disk {
 	margin-top: 8px;
@@ -263,8 +267,8 @@ label:focus {
 	padding-right: 10px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #babbf1;
+	color: white;
+	background:  #363a4f;
 }
 #temperature {
 	margin-top: 8px;
@@ -274,20 +278,21 @@ label:focus {
 	padding-right: 10px;
 	border-radius: 4px;
 	transition: none;
-	color: #161320;
-	background: #fe640b;
+	color: white;
+	background:  #363a4f;
 }
 
 #battery {
 	margin-top: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
+  margin-right: 6px;
 	margin-bottom: 8px;
 	border-radius: 4px;
 	transition: none;
   font-size: 14.5px;
 	color: #161320;
-	background: #C8CFA0;
+	background-color: #81A263;
 }
 
 #power-profiles-daemon{
@@ -296,17 +301,17 @@ label:focus {
 	padding-right: 13px;
 	margin-bottom: 8px;
 	border-radius: 4px;
-	color: #161320;
+	color: white;
 	background: #babbf1;
 }
 
 #battery.charging, #battery.plugged {
 	color: #161320;
-  background-color: #C8CFA0;
+  background-color: #06D001;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #B5E8E0;
+    background-color: #C80036;
     color: #161320;
     animation-name: blink;
     animation-duration: 0.5s;
