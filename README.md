@@ -8,7 +8,7 @@ put these files into .config/waybar on your linux machine and enjoy!
 
 <h2>Showcase</h2>
 
-![Screenshot 2](.github/source/showcase1.png)
+![Screenshot 2](.github/source/showcase.png)
 
 
 <h2>Modules</h2>
